@@ -77,20 +77,10 @@ Configurados con IDS (Suricata), FIM, reglas YARA y Threat Huntig (Virus total)
 
 ---
 
-## Roadmap
+## Fases
 
-- [x] Fase 1 — Infraestructura base + Webhook
-- [x] Fase 2 — LLM local + análisis de alertas
-- [ ] Fase 3 — Motor de correlación de eventos
-- [ ] Fase 4 — Dashboard Streamlit
-- [ ] Fase 5 — Chat SOC en lenguaje natural
-- [ ] Fase 6 — Daily Report + notificaciones Telegram
-- [ ] Fase 7 — Playbooks de respuesta automática (pfSense)
-- [ ] Fase 8 — Threat Intel completo (VirusTotal + AbuseIPDB)
-- [ ] Fase 9 — Feedback loop para mejora continua del LLM
-- [ ] Fase 10 — Reglas Sigma + YARA
-- [ ] Fase 11 — Suricata integrado con Wazuh
-- [ ] Fase 12 — Integración con Phishing Detector
+- [x]  1 — Infraestructura base + Webhook
+- [x]  2 — LLM local + análisis de alertas
 
 ---
 
@@ -152,6 +142,17 @@ sudo chmod +x /var/ossec/integrations/custom-aria
 sudo chown root:wazuh /var/ossec/integrations/custom-aria
 sudo systemctl restart wazuh-manager
 ```
+
+## Proximos pasos
+
+- Limpiar el resultado y la visualizacion
+- Prevenir falsos positivos
+- Crear base de datos con los resultados
+- Resumen semanal de resultados
+
+
+## Campturas del proyecto
+
 
 ---
 
