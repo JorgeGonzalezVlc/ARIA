@@ -2,7 +2,9 @@
 
 > SOC inteligente que analiza alertas de seguridad en tiempo real usando IA local.
 
-ARIA conecta Wazuh SIEM con un LLM local (Mistral via Ollama) para analizar automáticamente cada alerta de seguridad, mapear tácticas MITRE ATT&CK, calcular el reisgo y generar recomendaciones de respuesta — sin enviar datos a servicios externos para asegurar máxima privacidad
+ARIA conecta Wazuh SIEM con un LLM local (Mistral via Ollama) para analizar automáticamente cada alerta de seguridad, mapear tácticas MITRE ATT&CK, calcular el reisgo y generar recomendaciones de respuesta.
+
+sin enviar datos a servicios externos para asegurar máxima privacidad
 
 ---
 
