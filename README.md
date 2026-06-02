@@ -153,7 +153,17 @@ sudo systemctl restart wazuh-manager
 - Resumen semanal de resultados
 
 
-## Campturas del proyecto
+## Capturas del proyecto
+
+### Ejemplo comprobaciond e archivo
+<img width="1499" height="261" alt="Captura de pantalla 2026-06-02 195711" src="https://github.com/user-attachments/assets/42eb00eb-9393-42f9-90c7-c6be4a31fbfe" />
+<img width="2539" height="1015" alt="Captura de pantalla 2026-06-02 195831" src="https://github.com/user-attachments/assets/020ab817-4437-4716-9057-ea84cbe5b93f" />
+
+### Ejemplo intento de inicio de sesion fallido
+<img width="1546" height="264" alt="Captura de pantalla 2026-06-02 195942" src="https://github.com/user-attachments/assets/032b3e23-d3a6-4dd0-b375-26511aefeefb" />
+<img width="1229" height="1189" alt="Captura de pantalla 2026-06-02 200036" src="https://github.com/user-attachments/assets/93c33f0c-8a47-46e9-ba6a-3f284ec25f48" />
+
+
 
 
 ---
