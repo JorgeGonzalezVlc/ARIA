@@ -86,9 +86,9 @@ uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ### Configuración del webhook en Wazuh e integracion de VirusTotal
 
 Wazuh tiene una excelente documentacion por lo que animo a echar un ojo para configurarlo de manera personalizada. 
-[link text](https://documentation.wazuh.com/current/index.html)
+[Documentacion Wazuh](https://documentation.wazuh.com/current/index.html)
 
-En este Reedme me centraré en aquellos pasos que puediesen ser menos frecunetes pero añado enlace para 
+En este Reedme me centraré en aquellos pasos que puediesen ser menos frecunetes
 
 Añadir en `/var/ossec/etc/ossec.conf`:
 
