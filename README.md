@@ -4,30 +4,7 @@
 
 ARIA conecta Wazuh SIEM con un LLM local (Mistral via Ollama) para analizar automáticamente cada alerta de seguridad, mapear tácticas MITRE ATT&CK, calcular el reisgo y generar recomendaciones de respuesta.
 
-sin enviar datos a servicios externos para asegurar máxima privacidad
-
----
-
-## Demo
-
-```
-[ARIA] Alerta recibida: Logon Failure - Unknown user or bad password
-[ARIA] Enviando a Ollama...
-[ARIA] Análisis completado:
-{
-  "what_happened": "Intento de inicio de sesión fallido con credenciales incorrectas",
-  "why_dangerous": "Puede indicar un ataque de fuerza bruta o uso de credenciales robadas",
-  "impact": "Posible acceso no autorizado al sistema",
-  "false_positive_probability": 0.1,
-  "mitre_tactic": "Credential Access",
-  "mitre_technique": "T1110 - Brute Force",
-  "threat_score": "MEDIUM",
-  "recommendations": [
-    "Revisar logs de autenticación del host afectado",
-    "Implementar bloqueo tras N intentos fallidos"
-  ]
-}
-```
+Sin enviar datos a servicios externos para asegurar máxima privacidad
 
 ---
 
@@ -90,10 +67,10 @@ Configurados con IDS (Suricata), FIM, reglas YARA y Threat Huntig (Virus total)
 
 ### Requisitos previos
 
-- Python 3.10+
-- Wazuh 4.x instalado y corriendo
+- Python
+- Wazuh instalado y corriendo
 - Ollama instalado con modelo Mistral (`ollama pull mistral`)
-- Wazuh configurado con webhook hacia `http://<IP>:8000/api/v1/ingest`
+- Wazuh configurado con webhook a `http://<IP>:8000/api/v1/ingest`
 
 ### Setup
 
@@ -107,6 +84,11 @@ uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### Configuración del webhook en Wazuh e integracion de VirusTotal
+
+Wazuh tiene una excelente documentacion por lo que animo a echar un ojo para configurarlo de manera personalizada. 
+[link text](https://documentation.wazuh.com/current/index.html)
+
+En este Reedme me centraré en aquellos pasos que puediesen ser menos frecunetes pero añado enlace para 
 
 Añadir en `/var/ossec/etc/ossec.conf`:
 
@@ -153,7 +135,7 @@ sudo systemctl restart wazuh-manager
 - Resumen semanal de resultados
 
 
-## Capturas del proyecto
+## Demo
 
 ### Ejemplo comprobaciond e archivo
 <img width="1499" height="261" alt="Captura de pantalla 2026-06-02 195711" src="https://github.com/user-attachments/assets/42eb00eb-9393-42f9-90c7-c6be4a31fbfe" />
