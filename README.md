@@ -1,10 +1,3 @@
----
-title: "SOC inteligente con Wazuh e IA local (ARIA)"
-date: 2026-06-21
-categories: [Ciberseguridad, Defensive]
-tags: [Wazuh, SIEM, IA, Ollama, Mistral, FastAPI, Python, SOC, MITRE, Suricata, YARA]
----
-
 En este artículo documento paso a paso cómo construí  un SOC con una capa de IA.
 
 Lo primero era buscar un nombre chulo y como en el campo de la ciberseguridad es todo en inglés pues decidí **ARIA** (Automated Response & Intelligence Analyst), ademas que soy fan de juego de tronos.
